@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Character Memory Match</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <section class="game-info">
+  <button class="new-game" name="new-game-btn">New Game</button>
+  <button class="reset-game btn-hide" name="reset-game-btn">Reset</button>
+  <p class="timer"></p>
+</section> 
+<section class="game-board">
+<!-- Sonic -->
+  <div class="memory-card" data-framework="sonic">
+    <img class="front" src="https://png.icons8.com/color/96/000000/sonic-the-hedgehog-1.png" alt="Sonic the Hedgehog">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  <div class="memory-card" data-framework="sonic">
+    <img class="front" src="https://png.icons8.com/color/96/000000/sonic-the-hedgehog-1.png" alt="Sonic the Hedgehog">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  
+<!-- Mario -->
+  <div class="memory-card" data-framework="mario">
+    <img class="front" src="https://png.icons8.com/color/100/000000/super-mario.png" alt="Sonic the Hedgehog">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  <div class="memory-card" data-framework="mario">
+    <img class="front" src="https://png.icons8.com/color/100/000000/super-mario.png" alt="Sonic the Hedgehog">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  
+<!-- Finn the Human -->
+  <div class="memory-card" data-framework="finn">
+    <img class="front" src="https://png.icons8.com/color/96/000000/finn.png" alt="Finn the Human">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  <div class="memory-card" data-framework="finn">
+    <img class="front" src="https://png.icons8.com/color/96/000000/finn.png" alt="Finn the Human">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+
+<!-- Jake the Dog -->
+  <div class="memory-card" data-framework="jake">
+    <img class="front" src="https://png.icons8.com/color/100/000000/jake.png" alt="Jake the Dog">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  <div class="memory-card" data-framework="jake">
+    <img class="front" src="https://png.icons8.com/color/100/000000/jake.png" alt="Jake the Dog">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>  
+
+<!-- Ice King -->
+  <div class="memory-card" data-framework="iceKing">
+    <img class="front" src="https://png.icons8.com/color/96/000000/ice-king.png" alt="Ice King">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  <div class="memory-card" data-framework="iceKing">
+    <img class="front" src="https://png.icons8.com/color/96/000000/ice-king.png" alt="Ice King">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+
+<!-- Princess Bubblegum -->
+  <div class="memory-card" data-framework="bubblegum">
+    <img class="front" src="https://png.icons8.com/color/96/000000/princess-bubblegum.png" alt="Princess Bubblegum">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  <div class="memory-card" data-framework="bubblegum">
+    <img class="front" src="https://png.icons8.com/color/96/000000/princess-bubblegum.png" alt="Princess Bubblegum">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  
+<!-- Lumpy Space Princess -->
+  <div class="memory-card" data-framework="lsp">
+    <img class="front" src="https://png.icons8.com/color/96/000000/lumpy-space-princess.png" alt="Lumpy Space Princess">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  <div class="memory-card" data-framework="lsp">
+    <img class="front" src="https://png.icons8.com/color/96/000000/lumpy-space-princess.png" alt="Lumpy Space Princess">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>
+  
+<!-- TMNT - Rafael -->
+  <div class="memory-card" data-framework="rafael">
+    <img class="front" src="https://png.icons8.com/color/96/000000/ninja-turtle.png" alt="Rafael">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div>  
+  <div class="memory-card" data-framework="rafael">
+    <img class="front" src="https://png.icons8.com/color/96/000000/ninja-turtle.png" alt="Rafael">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div> 
+  
+<!-- Rick Sanchez -->
+  <div class="memory-card" data-framework="rick">
+    <img class="front" src="https://png.icons8.com/color/96/000000/rick-sanchez.png" alt="Rick Sanchez">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div> 
+  <div class="memory-card" data-framework="rick">
+    <img class="front" src="https://png.icons8.com/color/96/000000/rick-sanchez.png" alt="Rick Sanchez">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div> 
+  
+<!-- Morty Smith -->
+  <div class="memory-card" data-framework="morty">
+    <img class="front" src="https://png.icons8.com/color/96/000000/morty-smith.png" alt="Morty Smith">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div> 
+  <div class="memory-card" data-framework="morty">
+    <img class="front" src="https://png.icons8.com/color/96/000000/morty-smith.png" alt="Morty Smith">
+    <img class="back" src="https://png.icons8.com/clouds/100/000000/ace-of-spades.png">
+  </div> 
+</section>
+
+<section>
+  <div class="overlay hide"></div>
+  <div class="go-card hide">
+    <div class="cardText"> 
+      
+    </div>
+    <button class="new-game" name="new-game-btn">New Game</button>  
+  </div>  
+</section>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
